@@ -18,13 +18,13 @@ public class CubukKontrol : MonoBehaviour
             transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal")* speed * 0.0182451f, 0, 0));
         }
 
-        if (transform.position.x >= 15.688573f)
+        if (transform.position.x > 15.108573f)
         {
-            transform.position = new Vector3(-14.324997f, transform.position.y, transform.position.z);
+            transform.position = new Vector3(-13.744997f, transform.position.y, transform.position.z);
         }
-        if (transform.position.x <= -15.688573f)
+        if (transform.position.x < -15.108573f)
         {
-            transform.position = new Vector3(14.324997f, transform.position.y, transform.position.z);
+            transform.position = new Vector3(13.744997f, transform.position.y, transform.position.z);
         }
     }
 }
